@@ -17,5 +17,9 @@ namespace Usuarios.server.Models
         public string materia { get; set; } = null!;
 
         public int semestre { get; set; }
+
+        public DateTime createdDate { get; set; }
+
+        public DateTime updatedDate { get; set; }
     }
 }

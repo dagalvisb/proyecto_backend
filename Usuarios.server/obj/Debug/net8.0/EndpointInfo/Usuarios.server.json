@@ -380,6 +380,14 @@
           "semestre": {
             "type": "integer",
             "format": "int32"
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false
@@ -451,6 +459,14 @@
             "type": "string",
             "format": "multiline",
             "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false

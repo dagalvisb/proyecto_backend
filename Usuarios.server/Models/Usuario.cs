@@ -43,5 +43,9 @@ namespace Usuarios.server.Models
         [DataType(DataType.MultilineText)]
         [MaxLength(500)]
         public string bloque2 { get; set; } = "";
+
+        public DateTime createdDate { get; set; } 
+
+        public DateTime updatedDate { get; set; }
     }
 }

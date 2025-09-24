@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Usuarios.server.Models;
@@ -11,9 +12,11 @@ using Usuarios.server.Models;
 namespace Usuarios.server.Migrations
 {
     [DbContext(typeof(UsuarioContext))]
-    partial class UsuarioContextModelSnapshot : ModelSnapshot
+    [Migration("20250923222518_datatimes")]
+    partial class datatimes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

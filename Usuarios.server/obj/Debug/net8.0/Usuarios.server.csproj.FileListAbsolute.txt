@@ -342,3 +342,4 @@ C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\Usuarios
 C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\Usuarios.server\obj\Debug\net8.0\Usuarios.server.pdb
 C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\Usuarios.server\obj\Debug\net8.0\Usuarios.server.genruntimeconfig.cache
 C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\Usuarios.server\obj\Debug\net8.0\ref\Usuarios.server.dll
+C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\Usuarios.server\obj\Debug\net8.0\Usuarios.server.sourcelink.json
