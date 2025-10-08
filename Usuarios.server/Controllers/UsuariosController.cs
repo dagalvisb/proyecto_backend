@@ -22,7 +22,7 @@ namespace Usuarios.server.Controllers
         {
             await _context.Usuarios.AddAsync(usuario);
             await _context.SaveChangesAsync();
-            return Ok();
+            return Ok(new { message = "Usuario creado exitosamente"});
         }
 
         [HttpGet]
@@ -60,14 +60,13 @@ namespace Usuarios.server.Controllers
             usuarioExistente.cp = usuario.cp;
             usuarioExistente.ciudad = usuario.ciudad;
             usuarioExistente.movil = usuario.movil;
-            usuarioExistente.Fecha = usuario.Fecha;
             usuarioExistente.firma = usuario.firma;
             usuarioExistente.bloque1 = usuario.bloque1;
             usuarioExistente.bloque2 = usuario.bloque2;
 
             await _context.SaveChangesAsync();
 
-            return Ok(); 
+            return Ok(usuarioExistente); 
         }
 
         [HttpDelete]

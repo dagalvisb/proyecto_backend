@@ -3,32 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|c:\\users\\daniel g\\onedrive\\escritorio\\desarrollo web 2\\proyecto_backend\\usuarios.server\\models\\usuariocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|solutionrelative:usuarios.server\\models\\usuariocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|c:\\users\\daniel g\\onedrive\\escritorio\\desarrollo web 2\\proyecto_backend\\usuarios.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|solutionrelative:usuarios.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|c:\\users\\daniel g\\onedrive\\escritorio\\desarrollo web 2\\proyecto_backend\\usuarios.server\\models\\materia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|solutionrelative:usuarios.server\\models\\materia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|c:\\users\\daniel g\\onedrive\\escritorio\\desarrollo web 2\\proyecto_backend\\usuarios.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|solutionrelative:usuarios.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|c:\\users\\daniel g\\onedrive\\escritorio\\desarrollo web 2\\proyecto_backend\\usuarios.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|solutionrelative:usuarios.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|c:\\users\\daniel g\\onedrive\\escritorio\\desarrollo web 2\\proyecto_backend\\usuarios.server\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|solutionrelative:usuarios.server\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|c:\\users\\daniel g\\onedrive\\escritorio\\desarrollo web 2\\proyecto_backend\\usuarios.server\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|solutionrelative:usuarios.server\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Migrations\\20251002010101_fecha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Usuarios.server\\Migrations\\20251002010101_fecha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|c:\\users\\daniel g\\onedrive\\escritorio\\desarrollo web 2\\proyecto_backend\\usuarios.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|solutionrelative:usuarios.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|c:\\users\\daniel g\\onedrive\\escritorio\\desarrollo web 2\\proyecto_backend\\usuarios.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|solutionrelative:usuarios.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|c:\\users\\daniel g\\onedrive\\escritorio\\desarrollo web 2\\proyecto_backend\\usuarios.server\\models\\usuariocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|solutionrelative:usuarios.server\\models\\usuariocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|c:\\users\\daniel g\\onedrive\\escritorio\\desarrollo web 2\\proyecto_backend\\usuarios.server\\models\\materia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|solutionrelative:usuarios.server\\models\\materia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|c:\\users\\daniel g\\onedrive\\escritorio\\desarrollo web 2\\proyecto_backend\\usuarios.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|solutionrelative:usuarios.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +46,20 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "20251002010101_fecha.cs",
+              "DocumentMoniker": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Migrations\\20251002010101_fecha.cs",
+              "RelativeDocumentMoniker": "Usuarios.server\\Migrations\\20251002010101_fecha.cs",
+              "ToolTip": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Migrations\\20251002010101_fecha.cs",
+              "RelativeToolTip": "Usuarios.server\\Migrations\\20251002010101_fecha.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T01:01:03.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Usuarios.server\\Properties\\launchSettings.json",
@@ -55,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Materia.cs",
               "DocumentMoniker": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Models\\Materia.cs",
               "RelativeDocumentMoniker": "Usuarios.server\\Models\\Materia.cs",
@@ -63,36 +80,37 @@
               "RelativeToolTip": "Usuarios.server\\Models\\Materia.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T06:31:47.341Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-17T06:31:47.341Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "Usuarios.server\\Models\\Usuario.cs",
               "ToolTip": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Models\\Usuario.cs",
               "RelativeToolTip": "Usuarios.server\\Models\\Usuario.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAuwDEAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAcwB8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T05:14:30.892Z"
+              "WhenOpened": "2025-09-17T05:14:30.892Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "UsuariosController.cs",
               "DocumentMoniker": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Controllers\\UsuariosController.cs",
               "RelativeDocumentMoniker": "Usuarios.server\\Controllers\\UsuariosController.cs",
               "ToolTip": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Controllers\\UsuariosController.cs",
               "RelativeToolTip": "Usuarios.server\\Controllers\\UsuariosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:42:53.346Z"
+              "WhenOpened": "2025-09-17T04:42:53.346Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "UsuarioContext.cs",
               "DocumentMoniker": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Models\\UsuarioContext.cs",
               "RelativeDocumentMoniker": "Usuarios.server\\Models\\UsuarioContext.cs",
@@ -105,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\appsettings.json",
               "RelativeDocumentMoniker": "Usuarios.server\\appsettings.json",
@@ -123,9 +141,10 @@
               "RelativeDocumentMoniker": "Usuarios.server\\Program.cs",
               "ToolTip": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Program.cs",
               "RelativeToolTip": "Usuarios.server\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T21:24:53.024Z"
+              "WhenOpened": "2025-09-16T21:24:53.024Z",
+              "EditorCaption": ""
             }
           ]
         }

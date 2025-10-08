@@ -439,10 +439,6 @@
             "type": "string",
             "nullable": true
           },
-          "fecha": {
-            "type": "string",
-            "format": "date-time"
-          },
           "firma": {
             "maxLength": 50,
             "type": "string",
