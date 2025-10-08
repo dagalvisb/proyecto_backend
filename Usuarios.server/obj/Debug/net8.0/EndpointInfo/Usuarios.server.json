@@ -439,13 +439,6 @@
             "type": "string",
             "nullable": true
           },
-<<<<<<< HEAD
-=======
-          "fecha": {
-            "type": "string",
-            "nullable": true
-          },
->>>>>>> 6c52ca67a2d3aa04178f672b480e5bf1f7a9fbae
           "firma": {
             "maxLength": 50,
             "type": "string",

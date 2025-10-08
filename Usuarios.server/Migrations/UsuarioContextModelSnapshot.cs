@@ -69,13 +69,6 @@ namespace Usuarios.server.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-<<<<<<< HEAD
-=======
-                    b.Property<string>("Fecha")
-                        .IsRequired()
-                        .HasColumnType("text");
-
->>>>>>> 6c52ca67a2d3aa04178f672b480e5bf1f7a9fbae
                     b.Property<string>("bloque1")
                         .IsRequired()
                         .HasMaxLength(500)
