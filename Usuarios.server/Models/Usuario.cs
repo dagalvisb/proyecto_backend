@@ -31,6 +31,11 @@ namespace Usuarios.server.Models
         [MaxLength(50, ErrorMessage = "El campo {0} debe tener maximo {1} caracteres")]
         public string movil { get; set; } = null!;
 
+<<<<<<< HEAD
+=======
+        public string Fecha { get; set; }
+
+>>>>>>> 6c52ca67a2d3aa04178f672b480e5bf1f7a9fbae
         [MaxLength(50, ErrorMessage = "El campo {0} debe tener maximo {1} caracteres")]
         public string firma { get; set; } = null!;
 

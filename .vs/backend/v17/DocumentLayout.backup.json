@@ -1,12 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\",
+  "WorkspaceRootPath": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|c:\\users\\daniel g\\onedrive\\escritorio\\desarrollo web 2\\proyecto_backend\\usuarios.server\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|solutionrelative:usuarios.server\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|c:\\users\\da-al\\onedrive\\escritorio\\desarrollo web 2\\proyecto_backend\\usuarios.server\\migrations\\20250923072126_cambiarmodelousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|solutionrelative:usuarios.server\\migrations\\20250923072126_cambiarmodelousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|c:\\users\\daniel g\\onedrive\\escritorio\\desarrollo web 2\\proyecto_backend\\usuarios.server\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|solutionrelative:usuarios.server\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,6 +34,30 @@
     {
       "AbsoluteMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|c:\\users\\daniel g\\onedrive\\escritorio\\desarrollo web 2\\proyecto_backend\\usuarios.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|solutionrelative:usuarios.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+=======
+      "AbsoluteMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|c:\\users\\da-al\\onedrive\\escritorio\\desarrollo web 2\\proyecto_backend\\usuarios.server\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|solutionrelative:usuarios.server\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|c:\\users\\da-al\\onedrive\\escritorio\\desarrollo web 2\\proyecto_backend\\usuarios.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|solutionrelative:usuarios.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|c:\\users\\da-al\\onedrive\\escritorio\\desarrollo web 2\\proyecto_backend\\usuarios.server\\models\\usuariocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|solutionrelative:usuarios.server\\models\\usuariocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|c:\\users\\da-al\\onedrive\\escritorio\\desarrollo web 2\\proyecto_backend\\usuarios.server\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|solutionrelative:usuarios.server\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|c:\\users\\da-al\\onedrive\\escritorio\\desarrollo web 2\\proyecto_backend\\usuarios.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|solutionrelative:usuarios.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|c:\\users\\da-al\\onedrive\\escritorio\\desarrollo web 2\\proyecto_backend\\usuarios.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AFB1B2D-71B7-4625-9E5F-B589F0331F59}|Usuarios.server\\Usuarios.server.csproj|solutionrelative:usuarios.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 6c52ca67a2d3aa04178f672b480e5bf1f7a9fbae
     }
   ],
   "DocumentGroupContainers": [
@@ -42,10 +67,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 2,
               "Title": "20251002010101_fecha.cs",
               "DocumentMoniker": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Migrations\\20251002010101_fecha.cs",
@@ -97,24 +123,75 @@
             },
             {
               "$type": "Document",
+=======
+>>>>>>> 6c52ca67a2d3aa04178f672b480e5bf1f7a9fbae
               "DocumentIndex": 0,
+              "Title": "20250923072126_CambiarModeloUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Migrations\\20250923072126_CambiarModeloUsuario.cs",
+              "RelativeDocumentMoniker": "Usuarios.server\\Migrations\\20250923072126_CambiarModeloUsuario.cs",
+              "ToolTip": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Migrations\\20250923072126_CambiarModeloUsuario.cs",
+              "RelativeToolTip": "Usuarios.server\\Migrations\\20250923072126_CambiarModeloUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:21:26.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "Usuarios.server\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Models\\Usuario.cs",
+              "RelativeToolTip": "Usuarios.server\\Models\\Usuario.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwCEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T06:00:34.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Usuarios.server\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Usuarios.server\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-23T05:32:30.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "UsuariosController.cs",
-              "DocumentMoniker": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Controllers\\UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Controllers\\UsuariosController.cs",
               "RelativeDocumentMoniker": "Usuarios.server\\Controllers\\UsuariosController.cs",
+<<<<<<< HEAD
               "ToolTip": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Controllers\\UsuariosController.cs*",
               "RelativeToolTip": "Usuarios.server\\Controllers\\UsuariosController.cs*",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAABGAAAAAAAAAA==",
+=======
+              "ToolTip": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "Usuarios.server\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+>>>>>>> 6c52ca67a2d3aa04178f672b480e5bf1f7a9fbae
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-17T04:42:53.346Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 5,
+=======
+              "DocumentIndex": 3,
+>>>>>>> 6c52ca67a2d3aa04178f672b480e5bf1f7a9fbae
               "Title": "UsuarioContext.cs",
-              "DocumentMoniker": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Models\\UsuarioContext.cs",
+              "DocumentMoniker": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Models\\UsuarioContext.cs",
               "RelativeDocumentMoniker": "Usuarios.server\\Models\\UsuarioContext.cs",
-              "ToolTip": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Models\\UsuarioContext.cs",
+              "ToolTip": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Models\\UsuarioContext.cs",
               "RelativeToolTip": "Usuarios.server\\Models\\UsuarioContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -123,11 +200,15 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 7,
+=======
+              "DocumentIndex": 5,
+>>>>>>> 6c52ca67a2d3aa04178f672b480e5bf1f7a9fbae
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\appsettings.json",
               "RelativeDocumentMoniker": "Usuarios.server\\appsettings.json",
-              "ToolTip": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\appsettings.json",
+              "ToolTip": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\appsettings.json",
               "RelativeToolTip": "Usuarios.server\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -135,13 +216,21 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
+=======
+              "DocumentIndex": 6,
+>>>>>>> 6c52ca67a2d3aa04178f672b480e5bf1f7a9fbae
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Program.cs",
               "RelativeDocumentMoniker": "Usuarios.server\\Program.cs",
-              "ToolTip": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Program.cs",
+              "ToolTip": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Program.cs",
               "RelativeToolTip": "Usuarios.server\\Program.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACUAAAAcAAAAAAAAAA==",
+>>>>>>> 6c52ca67a2d3aa04178f672b480e5bf1f7a9fbae
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-16T21:24:53.024Z",
               "EditorCaption": ""
