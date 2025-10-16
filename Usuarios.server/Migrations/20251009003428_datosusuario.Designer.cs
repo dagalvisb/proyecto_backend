@@ -12,8 +12,8 @@ using Usuarios.server.Models;
 namespace Usuarios.server.Migrations
 {
     [DbContext(typeof(UsuarioContext))]
-    [Migration("20251002010101_fecha")]
-    partial class fecha
+    [Migration("20251009003428_datosusuario")]
+    partial class datosusuario
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -127,6 +127,11 @@ namespace Usuarios.server.Migrations
                         .HasColumnType("character varying(50)");
 
                     b.Property<string>("nombre")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
+
+                    b.Property<string>("tipo_usuario")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("character varying(50)");
