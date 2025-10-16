@@ -34,6 +34,9 @@ namespace Usuarios.server.Models
         [MaxLength(50, ErrorMessage = "El campo {0} debe tener maximo {1} caracteres")]
         public string firma { get; set; } = null!;
 
+        [MaxLength(50, ErrorMessage = "El campo {0} debe tener maximo {1} caracteres")]
+        public string tipo_usuario { get; set; } = null!;
+
         [DataType(DataType.MultilineText)]
         [MaxLength(500)]
         public string bloque1 { get; set; } = "";

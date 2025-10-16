@@ -1,22 +1,20 @@
-﻿using Microsoft.IdentityModel.Tokens;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Usuarios.server.Models
 {
-    public class Materia
+    public class incMaterias
     {
         public int Id { get; set; }
 
         [MaxLength(50, ErrorMessage = "El campo {0} debe tener maximo {1} caracteres")]
-        public string codigo { get; set; } = null!;
+        public string usuario { get; set; } = null!;
 
         [MaxLength(50, ErrorMessage = "El campo {0} debe tener maximo {1} caracteres")]
         public string materia { get; set; } = null!;
 
-        public int semestre { get; set; }
-
         public DateTime createdDate { get; set; }
 
-        public DateTime updatedDate { get; set; }
+
+
     }
 }

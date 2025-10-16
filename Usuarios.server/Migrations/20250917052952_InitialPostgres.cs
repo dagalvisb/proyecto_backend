@@ -26,7 +26,7 @@ namespace Usuarios.server.Migrations
                     cp = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
                     ciudad = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
                     movil = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
-                    Fecha = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    //Fecha = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     firma = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
                     bloque1 = table.Column<string>(type: "character varying(500)", maxLength: 500, nullable: false),
                     bloque2 = table.Column<string>(type: "character varying(500)", maxLength: 500, nullable: false)
