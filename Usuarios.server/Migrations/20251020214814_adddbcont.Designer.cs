@@ -5,15 +5,15 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using Usuarios.server.Models;
+using Usuarios.server.Data;
 
 #nullable disable
 
 namespace Usuarios.server.Migrations
 {
-    [DbContext(typeof(UsuarioContext))]
-    [Migration("20251016020132_incmaterias")]
-    partial class incmaterias
+    [DbContext(typeof(ApplicationDbContext))]
+    [Migration("20251020214814_adddbcont")]
+    partial class adddbcont
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -29,7 +29,8 @@ namespace Usuarios.server.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("integer")
+                        .HasColumnName("id");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
@@ -39,7 +40,9 @@ namespace Usuarios.server.Migrations
                         .HasColumnType("character varying(50)");
 
                     b.Property<DateTime>("createdDate")
-                        .HasColumnType("timestamp with time zone");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("timestamp with time zone")
+                        .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
                     b.Property<string>("materia")
                         .IsRequired()
@@ -50,21 +53,21 @@ namespace Usuarios.server.Migrations
                         .HasColumnType("integer");
 
                     b.Property<DateTime>("updatedDate")
-                        .HasColumnType("timestamp with time zone");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("timestamp with time zone")
+                        .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("codigo")
-                        .IsUnique();
-
-                    b.ToTable("Materias");
+                    b.ToTable("materias", (string)null);
                 });
 
             modelBuilder.Entity("Usuarios.server.Models.Usuario", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("integer")
+                        .HasColumnName("id");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
@@ -94,7 +97,9 @@ namespace Usuarios.server.Migrations
                         .HasColumnType("character varying(50)");
 
                     b.Property<DateTime>("createdDate")
-                        .HasColumnType("timestamp with time zone");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("timestamp with time zone")
+                        .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
                     b.Property<string>("direccion")
                         .IsRequired()
@@ -132,26 +137,28 @@ namespace Usuarios.server.Migrations
                         .HasColumnType("character varying(50)");
 
                     b.Property<DateTime>("updatedDate")
-                        .HasColumnType("timestamp with time zone");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("timestamp with time zone")
+                        .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("dni")
-                        .IsUnique();
-
-                    b.ToTable("Usuarios");
+                    b.ToTable("usuarios", (string)null);
                 });
 
             modelBuilder.Entity("Usuarios.server.Models.incMaterias", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("integer")
+                        .HasColumnName("id");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime>("createdDate")
-                        .HasColumnType("timestamp with time zone");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("timestamp with time zone")
+                        .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
                     b.Property<string>("materia")
                         .IsRequired()
@@ -165,9 +172,7 @@ namespace Usuarios.server.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("usuario");
-
-                    b.ToTable("incMaterias");
+                    b.ToTable("incmaterias", (string)null);
                 });
 #pragma warning restore 612, 618
         }

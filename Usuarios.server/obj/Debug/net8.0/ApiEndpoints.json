@@ -220,6 +220,16 @@
   },
   {
     "ContainingType": "Usuarios.server.Controllers.UsuariosController",
+    "Method": "GetMateriasUnicas",
+    "RelativePath": "api/Usuarios/Unicas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Usuarios.server.Controllers.UsuariosController",
     "Method": "VerIncMaterias",
     "RelativePath": "api/Usuarios/verincMaterias",
     "HttpMethod": "GET",

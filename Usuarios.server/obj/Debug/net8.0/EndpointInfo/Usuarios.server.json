@@ -5,6 +5,18 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Usuarios/Unicas": {
+      "get": {
+        "tags": [
+          "Usuarios"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Usuarios/CrearUsuario": {
       "post": {
         "tags": [

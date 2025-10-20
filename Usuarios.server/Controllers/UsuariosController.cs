@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections;
+using Usuarios.server.Data;
 using Usuarios.server.Models;
 
 namespace Usuarios.server.Controllers
@@ -10,11 +11,51 @@ namespace Usuarios.server.Controllers
     [ApiController]
     public class UsuariosController : ControllerBase
     {
-        private readonly UsuarioContext _context;
-        public UsuariosController(UsuarioContext context)
+        private readonly ApplicationDbContext _context;
+        public UsuariosController(ApplicationDbContext context)
         {
             _context = context;
         }
+
+        [HttpGet("Unicas")]
+        public async Task<IActionResult> GetMateriasUnicas()
+        {
+            var materias = new List<string>();
+
+            using var connection = _context.Database.GetDbConnection();
+            await connection.OpenAsync();
+
+            using var command = connection.CreateCommand();
+            command.CommandText = @"
+                DO $$
+                DECLARE
+                    ref refcursor := 'cur_materias';
+                    fila record;
+                BEGIN
+                    CALL sp_GetNombreMaterias(ref);
+
+                    LOOP
+                        FETCH ref INTO fila;
+                        EXIT WHEN NOT FOUND;
+                        RAISE NOTICE 'Materia: %', fila.materia;
+                    END LOOP;
+
+                    CLOSE ref;
+                END $$;
+            ";
+
+            using var reader = await command.ExecuteReaderAsync();
+
+            while (await reader.ReadAsync())
+            {
+                materias.Add(reader.GetString(0));
+            }
+
+            await connection.CloseAsync();
+
+            return Ok(materias);
+        }
+
 
         [HttpPost]
         [Route("CrearUsuario")]
@@ -143,7 +184,7 @@ namespace Usuarios.server.Controllers
         [Route("CrearincMaterias")]
         public async Task<IActionResult> IncMaterias(incMaterias incmaterias)
         {
-            await _context.incMaterias.AddAsync(incmaterias);
+            await _context.IncMaterias.AddAsync(incmaterias);
             await _context.SaveChangesAsync();
             return Ok(new { message = "Inscripción creada exitosamente" });
         }
@@ -152,7 +193,7 @@ namespace Usuarios.server.Controllers
         [Route("ListaIncMaterias")]
         public async Task<ActionResult<IEnumerable<incMaterias>>> ListaIncMaterias()
         {
-            var incmaterias = await _context.incMaterias.ToListAsync();
+            var incmaterias = await _context.IncMaterias.ToListAsync();
             return Ok(incmaterias);
         }
 
@@ -160,7 +201,7 @@ namespace Usuarios.server.Controllers
         [Route("verincMaterias")]
         public async Task<IActionResult> VerIncMaterias(int id)
         {
-            incMaterias incmaterias = await _context.incMaterias.FindAsync(id);
+            incMaterias incmaterias = await _context.IncMaterias.FindAsync(id);
             if (incmaterias == null)
             {
                 return NotFound();
@@ -172,7 +213,7 @@ namespace Usuarios.server.Controllers
         [Route("EditarIncMaterias")]
         public async Task<IActionResult> EditarIncMaterias(int id, incMaterias incmaterias)
         {
-            var incmateriasExistente = await _context.incMaterias.FindAsync(id);
+            var incmateriasExistente = await _context.IncMaterias.FindAsync(id);
             incmateriasExistente.usuario = incmaterias.usuario;
             incmateriasExistente.materia = incmaterias.materia;
             incmateriasExistente.createdDate = incmaterias.createdDate;
@@ -184,8 +225,8 @@ namespace Usuarios.server.Controllers
         [Route("EliminarIncMaterias")]
         public async Task<IActionResult> EliminarIncMaterias(int id)
         {
-            var incmateriasBorrada = await _context.incMaterias.FindAsync(id);
-            _context.incMaterias.Remove(incmateriasBorrada!);
+            var incmateriasBorrada = await _context.IncMaterias.FindAsync(id);
+            _context.IncMaterias.Remove(incmateriasBorrada!);
             await _context.SaveChangesAsync();
             return Ok();
         }
