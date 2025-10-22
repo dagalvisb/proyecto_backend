@@ -1,59 +1,72 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Npgsql;
 using System.Collections;
 using Usuarios.server.Data;
 using Usuarios.server.Models;
+using Microsoft.AspNetCore.Mvc;
+using Npgsql;
+using Microsoft.Extensions.Configuration;
 
 namespace Usuarios.server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class UsuariosController : ControllerBase
+   
     {
+        private readonly IConfiguration _configuration;
         private readonly ApplicationDbContext _context;
-        public UsuariosController(ApplicationDbContext context)
+        public UsuariosController(ApplicationDbContext context, IConfiguration configuration)
         {
             _context = context;
+            _configuration = configuration;
         }
+
 
         [HttpGet("Unicas")]
         public async Task<IActionResult> GetMateriasUnicas()
         {
             var materias = new List<string>();
 
-            using var connection = _context.Database.GetDbConnection();
-            await connection.OpenAsync();
-
-            using var command = connection.CreateCommand();
-            command.CommandText = @"
-                DO $$
-                DECLARE
-                    ref refcursor := 'cur_materias';
-                    fila record;
-                BEGIN
-                    CALL sp_GetNombreMaterias(ref);
-
-                    LOOP
-                        FETCH ref INTO fila;
-                        EXIT WHEN NOT FOUND;
-                        RAISE NOTICE 'Materia: %', fila.materia;
-                    END LOOP;
-
-                    CLOSE ref;
-                END $$;
-            ";
-
-            using var reader = await command.ExecuteReaderAsync();
-
-            while (await reader.ReadAsync())
+            try
             {
-                materias.Add(reader.GetString(0));
+                using (var connection = new NpgsqlConnection(_configuration.GetConnectionString("DefaultConnection")))
+                {
+                    await connection.OpenAsync();
+
+                    // 🔹 Iniciar transacción
+                    using (var transaction = await connection.BeginTransactionAsync())
+                    {
+                        // 1️⃣ Llamar al procedimiento que abre el cursor
+                        using (var callCmd = new NpgsqlCommand("CALL sp_GetNombreMaterias('ref');", connection, transaction))
+                        {
+                            await callCmd.ExecuteNonQueryAsync();
+                        }
+
+                        // 2️⃣ Hacer el FETCH dentro de la misma transacción
+                        using (var fetchCmd = new NpgsqlCommand("FETCH ALL IN \"ref\";", connection, transaction))
+                        using (var reader = await fetchCmd.ExecuteReaderAsync())
+                        {
+                            while (await reader.ReadAsync())
+                            {
+                                materias.Add(reader.GetString(0));
+                            }
+                        }
+
+                        // 3️⃣ Confirmar la transacción
+                        await transaction.CommitAsync();
+                    }
+                }
+
+                return Ok(materias);
             }
-
-            await connection.CloseAsync();
-
-            return Ok(materias);
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = "Error al obtener las materias únicas", error = ex.Message });
+            }
         }
 
 
