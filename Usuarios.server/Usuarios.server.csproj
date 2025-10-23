@@ -14,10 +14,14 @@
     </PackageReference>
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.4" />
+    <PackageReference Include="xunit" Version="2.9.3" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Database\StoredProcedures\" />
+    <Folder Include="Tests\controllers\" />
+    <Folder Include="Tests\Examples\" />
+    <Folder Include="Tests\Obj\" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties properties_4launchsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
