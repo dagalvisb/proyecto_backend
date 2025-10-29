@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\TestProject1\\TestProject1.csproj": {}
+    "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\TestProject1\\TestProject1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\TestProject1\\TestProject1.csproj": {
+    "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\TestProject1\\TestProject1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\TestProject1\\TestProject1.csproj",
+        "projectUniqueName": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\TestProject1\\TestProject1.csproj",
         "projectName": "TestProject1",
-        "projectPath": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\TestProject1\\TestProject1.csproj",
-        "packagesPath": "C:\\Users\\DANIEL G\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\TestProject1\\obj\\",
+        "projectPath": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\TestProject1\\TestProject1.csproj",
+        "packagesPath": "C:\\Users\\da-al\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\TestProject1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DANIEL G\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\da-al\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Usuarios.server.csproj": {
-                "projectPath": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Usuarios.server.csproj"
+              "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Usuarios.server.csproj": {
+                "projectPath": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Usuarios.server.csproj"
               }
             }
           }
@@ -55,21 +55,33 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.8.0, )"
+              "version": "[18.0.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
             },
             "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.4, )"
             },
             "xunit": {
               "target": "Package",
               "version": "[2.9.3, )"
             },
             "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[2.5.3, )"
+              "version": "[3.1.5, )"
             }
           },
           "imports": [
@@ -92,20 +104,20 @@
         }
       }
     },
-    "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Usuarios.server.csproj": {
+    "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Usuarios.server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Usuarios.server.csproj",
+        "projectUniqueName": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Usuarios.server.csproj",
         "projectName": "Usuarios.server",
-        "projectPath": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Usuarios.server.csproj",
-        "packagesPath": "C:\\Users\\DANIEL G\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\obj\\",
+        "projectPath": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Usuarios.server.csproj",
+        "packagesPath": "C:\\Users\\da-al\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DANIEL G\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\da-al\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -139,15 +151,19 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.9, )"
+              "version": "[9.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.9, )"
+              "version": "[9.0.10, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
@@ -155,11 +171,17 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[9.0.4, )"
+              "version": "[9.0.6, )"
             },
             "xunit": {
               "target": "Package",
               "version": "[2.9.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.5, )"
             }
           },
           "imports": [

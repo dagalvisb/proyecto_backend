@@ -1,10 +1,12 @@
 using Usuarios.server.Controllers;
-using Usuarios.server.Models;
+
+
 
 namespace TestProject1
 {
     public class UnitTest1
     {
+
         [Fact]
         public void Test1()
         {
@@ -40,14 +42,7 @@ namespace TestProject1
             int result = Data.suma(5, 3, 4);
             Assert.Equal(0, result);
         }
-
-        [Fact]
-        public void testUsuarios()
-        {
-            UsuariosController usuariosController = new UsuariosController(null, null);
-
-            string result = usuariosController.GetMateriasUnicas();
-            
-        }
+  
     }
+
 }

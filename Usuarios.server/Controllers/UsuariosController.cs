@@ -19,6 +19,8 @@ namespace Usuarios.server.Controllers
     {
         private readonly IConfiguration _configuration;
         private readonly ApplicationDbContext _context;
+        private ApplicationDbContext @object;
+
         public UsuariosController(ApplicationDbContext context, IConfiguration configuration)
         {
             _context = context;
