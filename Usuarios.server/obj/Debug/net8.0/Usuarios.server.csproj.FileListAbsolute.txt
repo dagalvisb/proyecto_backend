@@ -527,3 +527,5 @@ C:\Users\da-al\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\Usuarios.se
 C:\Users\da-al\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\Usuarios.server\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\da-al\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\Usuarios.server\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\da-al\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\Usuarios.server\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
+C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\Usuarios.server\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
+C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\Usuarios.server\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll

@@ -69,6 +69,19 @@
           "build/netstandard2.0/coverlet.collector.targets": {}
         }
       },
+      "FluentAssertions/8.8.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/FluentAssertions.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/FluentAssertions.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "compile": {
@@ -1781,6 +1794,31 @@
         "coverlet-icon.png",
         "coverlet.collector.6.0.4.nupkg.sha512",
         "coverlet.collector.nuspec"
+      ]
+    },
+    "FluentAssertions/8.8.0": {
+      "sha512": "m0kwcqBwvVel03FuMa7Ozo/oTaxYbjeNlcOhQFkyQpwX/8wks6RNl/Jnn58DCZVs6c2oG1RsCZw7HfKSaxLm3w==",
+      "type": "package",
+      "path": "fluentassertions/8.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "FluentAssertions.png",
+        "LICENSE",
+        "fluentassertions.8.8.0.nupkg.sha512",
+        "fluentassertions.nuspec",
+        "lib/net47/FluentAssertions.dll",
+        "lib/net47/FluentAssertions.pdb",
+        "lib/net47/FluentAssertions.xml",
+        "lib/net6.0/FluentAssertions.dll",
+        "lib/net6.0/FluentAssertions.pdb",
+        "lib/net6.0/FluentAssertions.xml",
+        "lib/netstandard2.0/FluentAssertions.dll",
+        "lib/netstandard2.0/FluentAssertions.pdb",
+        "lib/netstandard2.0/FluentAssertions.xml",
+        "lib/netstandard2.1/FluentAssertions.dll",
+        "lib/netstandard2.1/FluentAssertions.pdb",
+        "lib/netstandard2.1/FluentAssertions.xml"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -4288,6 +4326,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "FluentAssertions >= 8.8.0",
       "Microsoft.EntityFrameworkCore.InMemory >= 9.0.10",
       "Microsoft.NET.Test.Sdk >= 18.0.0",
       "Moq >= 4.20.72",
@@ -4298,23 +4337,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\da-al\\.nuget\\packages\\": {},
+    "C:\\Users\\DANIEL G\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\TestProject1\\TestProject1.csproj",
+      "projectUniqueName": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\TestProject1\\TestProject1.csproj",
       "projectName": "TestProject1",
-      "projectPath": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\TestProject1\\TestProject1.csproj",
-      "packagesPath": "C:\\Users\\da-al\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\TestProject1\\obj\\",
+      "projectPath": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\TestProject1\\TestProject1.csproj",
+      "packagesPath": "C:\\Users\\DANIEL G\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\TestProject1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\da-al\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DANIEL G\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4330,8 +4369,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Usuarios.server.csproj": {
-              "projectPath": "C:\\Users\\da-al\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Usuarios.server.csproj"
+            "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Usuarios.server.csproj": {
+              "projectPath": "C:\\Users\\DANIEL G\\OneDrive\\Escritorio\\desarrollo web 2\\proyecto_backend\\Usuarios.server\\Usuarios.server.csproj"
             }
           }
         }
@@ -4352,6 +4391,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "FluentAssertions": {
+            "target": "Package",
+            "version": "[8.8.0, )"
+          },
           "Microsoft.EntityFrameworkCore.InMemory": {
             "target": "Package",
             "version": "[9.0.10, )"

@@ -7,9 +7,6 @@ C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProj
 C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\Usuarios.server.staticwebassets.endpoints.json
 C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\Usuarios.server.exe
 C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\testhost.exe
-C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
-C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
-C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\xunit.runner.utility.netcoreapp10.dll
 C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\TestProject1.deps.json
 C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\TestProject1.runtimeconfig.json
 C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\TestProject1.dll
@@ -53,7 +50,6 @@ C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProj
 C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\Npgsql.dll
 C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\NuGet.Frameworks.dll
 C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -337,3 +333,9 @@ C:\Users\da-al\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject
 C:\Users\da-al\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\da-al\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\.msCoverageSourceRootsMapping_TestProject1
 C:\Users\da-al\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
+C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\.msCoverageSourceRootsMapping_TestProject1
+C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
+C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\Moq.dll
+C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\FluentAssertions.dll

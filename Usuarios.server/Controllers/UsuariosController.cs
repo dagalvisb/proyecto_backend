@@ -19,7 +19,8 @@ namespace Usuarios.server.Controllers
     {
         private readonly IConfiguration _configuration;
         private readonly ApplicationDbContext _context;
-        private ApplicationDbContext @object;
+
+        public ApplicationDbContext Context { get; }
 
         public UsuariosController(ApplicationDbContext context, IConfiguration configuration)
         {
@@ -27,6 +28,10 @@ namespace Usuarios.server.Controllers
             _configuration = configuration;
         }
 
+        public UsuariosController(ApplicationDbContext context)
+        {
+            Context = context;
+        }
 
         [HttpGet("Unicas")]
         public async Task<IActionResult> GetMateriasUnicas()
@@ -141,11 +146,12 @@ namespace Usuarios.server.Controllers
 
         [HttpPost]
         [Route("crearMateria")]
-        public async Task<IActionResult> CrearMateria(Materia materia)
+        public async Task<ActionResult<Materia>> CrearMateria(Materia materia)
         {
-            await _context.Materias.AddAsync(materia);
+            materia.createdDate = DateTime.UtcNow;
+            _context.Materias.Add(materia);
             await _context.SaveChangesAsync();
-            return Ok();
+            return CreatedAtAction("crear materias", new { id = materia.Id }, materia);
         }
 
         [HttpGet]
