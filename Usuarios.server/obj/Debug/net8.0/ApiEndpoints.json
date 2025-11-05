@@ -29,6 +29,22 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Usuarios.server.Controllers.UsuariosController",
+    "Method": "CrearMaterias",
+    "RelativePath": "api/Usuarios/crearMaterias",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "materia",
+        "Type": "Usuarios.server.Models.Materia",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "Usuarios.server.Models.Materia",
@@ -219,6 +235,32 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[Usuarios.server.Models.Usuario, Usuarios.server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Usuarios.server.Controllers.UsuariosController",
+    "Method": "GetMateria",
+    "RelativePath": "api/Usuarios/materia/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Usuarios.server.Models.Materia",
         "MediaTypes": [
           "text/plain",
           "application/json",

@@ -28,11 +28,6 @@ namespace Usuarios.server.Controllers
             _configuration = configuration;
         }
 
-        public UsuariosController(ApplicationDbContext context)
-        {
-            Context = context;
-        }
-
         [HttpGet("Unicas")]
         public async Task<IActionResult> GetMateriasUnicas()
         {
@@ -145,13 +140,32 @@ namespace Usuarios.server.Controllers
         }
 
         [HttpPost]
-        [Route("crearMateria")]
-        public async Task<ActionResult<Materia>> CrearMateria(Materia materia)
+        [Route("crearMaterias")]
+        public async Task<ActionResult<Materia>> CrearMaterias(Materia materia)
         {
-            materia.createdDate = DateTime.UtcNow;
             _context.Materias.Add(materia);
             await _context.SaveChangesAsync();
-            return CreatedAtAction("crear materias", new { id = materia.Id }, materia);
+            return CreatedAtAction(nameof(GetMateria), new { id = materia.Id }, materia);
+        }
+        
+        [HttpGet("materia/{id}")]
+        public async Task<ActionResult<Materia>> GetMateria(int id)
+        {
+            var materia = await _context.Materias.FindAsync(id);
+            if (materia == null)
+            {
+                return NotFound();
+            }
+            return materia;
+        }
+
+        [HttpPost]
+        [Route("crearMateria")]
+        public async Task<IActionResult>CrearMateria(Materia materia)
+        {
+            await _context.Materias.AddAsync(materia);
+            await _context.SaveChangesAsync();
+            return Ok (new { message = "Materia creada exitosamente" });
         }
 
         [HttpGet]

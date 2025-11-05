@@ -339,3 +339,4 @@ C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProj
 C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\Moq.dll
 C:\Users\DANIEL G\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\FluentAssertions.dll
+C:\Users\da-al\OneDrive\Escritorio\desarrollo web 2\proyecto_backend\TestProject1\bin\Debug\net8.0\FluentAssertions.dll
