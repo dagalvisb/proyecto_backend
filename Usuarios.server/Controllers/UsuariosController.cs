@@ -138,26 +138,7 @@ namespace Usuarios.server.Controllers
 
             return Ok();
         }
-
-        [HttpPost]
-        [Route("crearMaterias")]
-        public async Task<ActionResult<Materia>> CrearMaterias(Materia materia)
-        {
-            _context.Materias.Add(materia);
-            await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetMateria), new { id = materia.Id }, materia);
-        }
         
-        [HttpGet("materia/{id}")]
-        public async Task<ActionResult<Materia>> GetMateria(int id)
-        {
-            var materia = await _context.Materias.FindAsync(id);
-            if (materia == null)
-            {
-                return NotFound();
-            }
-            return materia;
-        }
 
         [HttpPost]
         [Route("crearMateria")]
