@@ -1,31 +1,26 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Npgsql;
-using System.Collections;
 using Usuarios.server.Data;
 using Usuarios.server.Models;
-using Microsoft.AspNetCore.Mvc;
-using Npgsql;
-using Microsoft.Extensions.Configuration;
 
 namespace Usuarios.server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsuariosController : ControllerBase
-   
+    public class IncMateriasController : Controller
     {
-        private readonly IConfiguration _configuration;
         private readonly ApplicationDbContext _context;
+        private readonly IConfiguration _configuration;
 
         public ApplicationDbContext Context { get; }
 
-        public UsuariosController(ApplicationDbContext context, IConfiguration configuration)
-        {
+        public IncMateriasController(ApplicationDbContext context, IConfiguration configuration) { 
+
             _context = context;
             _configuration = configuration;
+
         }
 
         [HttpGet("Unicas")]
@@ -71,73 +66,55 @@ namespace Usuarios.server.Controllers
             }
         }
 
-
         [HttpPost]
-        [Route("CrearUsuario")]
-        public async Task<IActionResult> CrearUsuario(Usuario usuario)
+        [Route("CrearincMaterias")]
+        public async Task<IActionResult> IncMaterias(incMaterias incmaterias)
         {
-            await _context.Usuarios.AddAsync(usuario);
+            await _context.IncMaterias.AddAsync(incmaterias);
             await _context.SaveChangesAsync();
-            return Ok(new { message = "Usuario creado exitosamente" });
+            return Ok(new { message = "Inscripción creada exitosamente" });
         }
 
         [HttpGet]
-        [Route("ListaUsuario")]
-        public async Task<ActionResult<IEnumerable<Usuario>>> ListaUsuarios()
+        [Route("ListaIncMaterias")]
+        public async Task<ActionResult<IEnumerable<incMaterias>>> ListaIncMaterias()
         {
-            var usuarios = await _context.Usuarios.ToListAsync();
-            return Ok(usuarios);
+            var incmaterias = await _context.IncMaterias.ToListAsync();
+            return Ok(incmaterias);
         }
 
         [HttpGet]
-        [Route("verUsuario")]
-        public async Task<IActionResult> VerUsuario(int id)
+        [Route("verincMaterias")]
+        public async Task<IActionResult> VerIncMaterias(int id)
         {
-            Usuario usuario = await _context.Usuarios.FindAsync(id);
-            if (usuario == null)
+            incMaterias incmaterias = await _context.IncMaterias.FindAsync(id);
+            if (incmaterias == null)
             {
                 return NotFound();
             }
-            return Ok(usuario);
+            return Ok(incmaterias);
         }
 
         [HttpPut]
-        [Route("EditarUsuario")]
-
-        public async Task<IActionResult> EditarUsuario(int id, Usuario usuario)
+        [Route("EditarIncMaterias")]
+        public async Task<IActionResult> EditarIncMaterias(int id, incMaterias incmaterias)
         {
-            var usuarioExistente = await _context.Usuarios.FindAsync(id);
-
-            usuarioExistente.nombre = usuario.nombre;
-            usuarioExistente.lugarNacimiento = usuario.lugarNacimiento;
-            usuarioExistente.dni = usuario.dni;
-            usuarioExistente.correo = usuario.correo;
-            usuarioExistente.direccion = usuario.direccion;
-            usuarioExistente.cp = usuario.cp;
-            usuarioExistente.ciudad = usuario.ciudad;
-            usuarioExistente.movil = usuario.movil;
-            usuarioExistente.firma = usuario.firma;
-            usuarioExistente.tipo_usuario = usuario.tipo_usuario;
-            usuarioExistente.bloque1 = usuario.bloque1;
-            usuarioExistente.bloque2 = usuario.bloque2;
-
+            var incmateriasExistente = await _context.IncMaterias.FindAsync(id);
+            incmateriasExistente.usuario = incmaterias.usuario;
+            incmateriasExistente.materia = incmaterias.materia;
+            incmateriasExistente.createdDate = incmaterias.createdDate;
             await _context.SaveChangesAsync();
-
-            return Ok(usuarioExistente);
+            return Ok(incmateriasExistente);
         }
 
         [HttpDelete]
-        [Route("EliminarUsuario")]
-        public async Task<IActionResult> EliminarUsuario(int id)
+        [Route("EliminarIncMaterias")]
+        public async Task<IActionResult> EliminarIncMaterias(int id)
         {
-            var usuarioBorrado = await _context.Usuarios.FindAsync(id);
-
-            _context.Usuarios.Remove(usuarioBorrado!);
-
+            var incmateriasBorrada = await _context.IncMaterias.FindAsync(id);
+            _context.IncMaterias.Remove(incmateriasBorrada!);
             await _context.SaveChangesAsync();
-
             return Ok();
         }
-
     }
 }

@@ -98,7 +98,7 @@ namespace TestProyect1
             await _context.SaveChangesAsync();
 
             // Act
-            var result = await _controller.ListaProductos();
+            var result = await _controller.ListaUsuarios();
 
             // Assert
             var okResult = Assert.IsType<OkObjectResult>(result.Result);

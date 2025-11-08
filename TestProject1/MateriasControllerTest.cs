@@ -1,38 +1,61 @@
-﻿using Usuarios.server.Controllers;
-using Usuarios.server.Models;
+﻿using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
-using FluentAssertions;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Moq;
+using Usuarios.server.Controllers;
+using Usuarios.server.Data;
+using Usuarios.server.Models;
+using Xunit;
 
 namespace TestProject1
 {
     public class MateriasControllerTest : TestBase
     {
-        private UsuariosController _controller;
+        private readonly ApplicationDbContext _context;
+        private readonly MateriasController _controller;
 
         public MateriasControllerTest()
         {
-            // Necesitas mockear IConfiguration
-            var configuration = new ConfigurationBuilder()
-                .AddInMemoryCollection()
-                .Build();
+            var options = new DbContextOptionsBuilder<ApplicationDbContext>()
+                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString()) // Nombre único para cada test
+                .Options;
 
-            _controller = new UsuariosController(context, configuration);
+
+            _context = new ApplicationDbContext(options);
+            _controller = new MateriasController(_context);
+
+            // Limpiar y inicializar la base de datos en memoria
+            _context.Database.EnsureDeleted();
+            _context.Database.EnsureCreated();
+
         }
 
-        [Fact]
-        public async Task CrearMateria_DeberiaCrearMateriaCorrectamente()
+        private Materia CrearMateriaValida(int id = 0)
         {
-            // Arrange
-            var newMateria = new Materia
+            var materia = new Materia
             {
                 codigo = "MAT105",
                 materia = "Matematicas Discretas",
                 semestre = 6
             };
 
+            if (id > 0)
+            {
+                materia.Id = id;
+            }
+
+            return materia;
+        }
+
+        [Fact]
+        public async Task TestCrearMateria()
+        {
+            // Arrange
+            var materia = CrearMateriaValida();
+
             // Act
-            var result = await _controller.CrearMateria(newMateria);
+            var result = await _controller.CrearMateria(materia);
 
             // Assert
             result.Should().NotBeNull();
@@ -48,10 +71,88 @@ namespace TestProject1
             message.Should().Be("Materia creada exitosamente");
 
             // Verifica que se guardó en la base de datos
-            var materiaEnDb = context.Materias.FirstOrDefault(m => m.codigo == "MAT105");
+            var materiaEnDb = _context.Materias.FirstOrDefault(m => m.codigo == "MAT105");
             materiaEnDb.Should().NotBeNull();
             materiaEnDb.materia.Should().Be("Matematicas Discretas");
             materiaEnDb.semestre.Should().Be(6);
+        }
+
+        [Fact]
+        public async Task TestListaMaterias()
+        {
+            // Arrange - Usar el método helper para crear usuarios válidos
+            var materia = new List<Materia>
+            {
+                CrearMateriaValida(1),
+                CrearMateriaValida(2)
+            };
+
+            await _context.Materias.AddRangeAsync(materia);
+            await _context.SaveChangesAsync();
+
+            // Act
+            var result = await _controller.ListaMaterias();
+
+            // Assert
+            var okResult = Assert.IsType<OkObjectResult>(result.Result);
+            var returnValue = Assert.IsType<List<Materia>>(okResult.Value);
+            Assert.Equal(2, returnValue.Count);
+        }
+
+        [Fact]
+        public async Task TestVerMateria()
+        {
+            // Arrange
+            var materia = CrearMateriaValida(1);
+            await _context.Materias.AddAsync(materia);
+            await _context.SaveChangesAsync();
+
+            // Act
+            var result = await _controller.VerMaterias(1);
+
+            // Assert
+            var okResult = Assert.IsType<OkObjectResult>(result);
+            var returnValue = Assert.IsType<Materia>(okResult.Value);
+            Assert.Equal(1, returnValue.Id);
+            Assert.Equal("MAT105", returnValue.codigo);
+        }
+
+        [Fact]
+        public async Task TestEditarUsuario()
+        {
+            // Arrange
+            var materiaExistente = new Materia
+            {
+                Id = 1,
+                codigo = "MAT105",
+                materia = "Matematicas Discretas",
+                semestre = 6
+            };
+
+            await _context.Materias.AddAsync(materiaExistente);
+            await _context.SaveChangesAsync();
+
+            var materiaActualizada = new Materia
+            {
+                codigo = "MAT106",
+                materia = "Matematicas Discretas 2",
+                semestre = 7
+            };
+
+            // Act
+            var result = await _controller.EditarMateria(1, materiaActualizada);
+
+            // Assert
+            var okResult = Assert.IsType<OkObjectResult>(result);
+            var returnValue = Assert.IsType<Materia>(okResult.Value);
+
+            Assert.Equal("MAT106", returnValue.codigo);
+            Assert.Equal("Matematicas Discretas 2", returnValue.materia);
+
+            // Verificar cambios en la base de datos
+            var materiaEnDb = await _context.Materias.FindAsync(1);
+            Assert.Equal("MAT106", materiaEnDb.codigo);
+            Assert.Equal("Matematicas Discretas 2", materiaEnDb.materia);
         }
     }
 }
